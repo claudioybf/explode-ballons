@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" style=" overflow-x: hidden;" >
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Estourando balões</title>
+
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+		<link rel="icon" href="imagens/icon.png">
+		<script language='Javascript'>
+			function iniciaJogo(argument) {
+				var nivel_jogo = document.getElementById('nivel_jogo').value;
+
+				window.location.href ='jogo.html?'+nivel_jogo;
+			}
+		</script>
+	</head>
+
+	<body style="  background: url('imagens/fundo2.png') no-repeat center center fixed; background-size: cover;">
+		<div class="container" style=" margin-top: 250px;">
+			<div class="row">
+				<div class="col-sm-4">
+					
+				</div>
+				<div class="col-sm-4" style=" background-color: #EEE; border-radius: 6px; opacity: 0.90;">
+					
+					<p style="text-align: center; font-family: 'Bungee';">
+					<b style="font-family: 'Bungee'; font-size: 30px; opacity: 100;">Nivel:</b>
+					<select class="form-control" id="nivel_jogo" style="width: 100px; height: 50px; margin:auto ; background-color: #EEE; border: none;">
+						<option value="1">Fácil</option>
+						<option value="2">Normal</option>
+						<option value="3">Difícil</option>
+					</select>
+					</p>
+					<br>
+					<div class="row" style="text-align: center;">
+						<button class="btn btn-success" style="border-radius: 50%;height: 200px; width: 200px; margin-bottom: 10px;" onclick="iniciaJogo() "><p style="font-size: 40px; font-family: 'Bungee';">Jogar</p></button>
+					</div>
+					
+				</div>
+				<div class="col-sm-4">
+				</div>	
+			</div>	
+		</div>
+	</body>
+	
+</html>
